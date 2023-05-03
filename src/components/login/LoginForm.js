@@ -45,13 +45,32 @@ export default function LoginForm({ setVisible }) {
       setError(error.response.data.message);
     }
   };
+  const loginMyAccount = async () => {
+    try {
+      setLoading(true);
+      const { data } = await axios.post(`https://quangnv.fun/login`, {
+        email: "quangnv.0212@gmail.com",
+        password: "ngulol69",
+      });
+      dispatch({ type: "LOGIN", payload: data });
+      Cookies.set("user", JSON.stringify(data));
+      navigate("/");
+    } catch (error) {
+      setLoading(false);
+      setError(error.response.data.message);
+    }
+  };
   return (
     <div className="login_wrap">
       <div className="login_1">
-        <img src="../../icons/facebook.svg" alt="" />
         <span>
-          Facebook helps you connect and share with the people in your life.
+          Chào mừng các bạn đến với dự án cá nhân của mình. Bạn có thể đăng ký
+          tài khoản hoặc đăng nhập bằng tài khoản của mình để trải nghiệm Web ạ.
         </span>
+        <hr />
+        <button onClick={loginMyAccount} className="blue_btn">
+          Đăng nhập bằng tài khoản của mình
+        </button>
       </div>
       <div className="login_2">
         <div className="login_2_wrap">
