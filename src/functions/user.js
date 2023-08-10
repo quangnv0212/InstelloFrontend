@@ -2,7 +2,7 @@ import axios from "axios";
 export const updateprofilePicture = async (url, token) => {
   try {
     const { data } = await axios.put(
-      `http://103.79.142.191:8000/updateProfilePicture`,
+      `https://103.79.142.191:8000/updateProfilePicture`,
       {
         url,
       },
@@ -20,7 +20,7 @@ export const updateprofilePicture = async (url, token) => {
 export const updateCover = async (url, token) => {
   try {
     const { data } = await axios.put(
-      `http://103.79.142.191:8000/updateCover`,
+      `https://103.79.142.191:8000/updateCover`,
       {
         url,
       },
@@ -38,7 +38,7 @@ export const updateCover = async (url, token) => {
 export const addFriend = async (id, token) => {
   try {
     const { data } = await axios.put(
-      `http://103.79.142.191:8000/addFriend/${id}`,
+      `https://103.79.142.191:8000/addFriend/${id}`,
       {},
 
       {
@@ -55,7 +55,7 @@ export const addFriend = async (id, token) => {
 export const cancelRequest = async (id, token) => {
   try {
     const { data } = await axios.put(
-      `http://103.79.142.191:8000/cancelRequest/${id}`,
+      `https://103.79.142.191:8000/cancelRequest/${id}`,
       {},
 
       {
@@ -72,7 +72,7 @@ export const cancelRequest = async (id, token) => {
 export const follow = async (id, token) => {
   try {
     const { data } = await axios.put(
-      `http://103.79.142.191:8000/follow/${id}`,
+      `https://103.79.142.191:8000/follow/${id}`,
       {},
 
       {
@@ -90,7 +90,7 @@ export const follow = async (id, token) => {
 export const unfollow = async (id, token) => {
   try {
     const { data } = await axios.put(
-      `http://103.79.142.191:8000/unfollow/${id}`,
+      `https://103.79.142.191:8000/unfollow/${id}`,
       {},
 
       {
@@ -107,7 +107,7 @@ export const unfollow = async (id, token) => {
 export const acceptRequest = async (id, token) => {
   try {
     const { data } = await axios.put(
-      `http://103.79.142.191:8000/acceptRequest/${id}`,
+      `https://103.79.142.191:8000/acceptRequest/${id}`,
       {},
 
       {
@@ -124,7 +124,7 @@ export const acceptRequest = async (id, token) => {
 export const unfriend = async (id, token) => {
   try {
     const { data } = await axios.put(
-      `http://103.79.142.191:8000/unfriend/${id}`,
+      `https://103.79.142.191:8000/unfriend/${id}`,
       {},
 
       {
@@ -141,7 +141,7 @@ export const unfriend = async (id, token) => {
 export const deleteRequest = async (id, token) => {
   try {
     const { data } = await axios.put(
-      `http://103.79.142.191:8000/deleteRequest/${id}`,
+      `https://103.79.142.191:8000/deleteRequest/${id}`,
       {},
 
       {
@@ -158,7 +158,7 @@ export const deleteRequest = async (id, token) => {
 export const search = async (searchTerm, token) => {
   try {
     const { data } = await axios.post(
-      `http://103.79.142.191:8000/search/${searchTerm}`,
+      `https://103.79.142.191:8000/search/${searchTerm}`,
       {},
 
       {
@@ -175,7 +175,7 @@ export const search = async (searchTerm, token) => {
 export const addToSearchHistory = async (searchUser, token) => {
   try {
     const { data } = await axios.put(
-      `http://103.79.142.191:8000/addToSearchHistory`,
+      `https://103.79.142.191:8000/addToSearchHistory`,
       { searchUser },
 
       {
@@ -192,7 +192,7 @@ export const addToSearchHistory = async (searchUser, token) => {
 export const getSearchHistory = async (token) => {
   try {
     const { data } = await axios.get(
-      `http://103.79.142.191:8000/getSearchHistory`,
+      `https://103.79.142.191:8000/getSearchHistory`,
 
       {
         headers: {
@@ -208,7 +208,7 @@ export const getSearchHistory = async (token) => {
 export const removeFromSearch = async (searchUser, token) => {
   try {
     const { data } = await axios.put(
-      `http://103.79.142.191:8000/removeFromSearch`,
+      `https://103.79.142.191:8000/removeFromSearch`,
       { searchUser },
 
       {
@@ -225,7 +225,7 @@ export const removeFromSearch = async (searchUser, token) => {
 export const getFriendsPageInfos = async (token) => {
   try {
     const { data } = await axios.get(
-      `http://103.79.142.191:8000/getFriendsPageInfos`,
+      `https://103.79.142.191:8000/getFriendsPageInfos`,
 
       {
         headers: {

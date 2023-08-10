@@ -52,7 +52,7 @@ export default function Profile({ getAllPosts }) {
         type: "PROFILE_REQUEST",
       });
       const { data } = await axios.get(
-        `http://103.79.142.191:8000/getProfile/${userName}`,
+        `https://103.79.142.191:8000/getProfile/${userName}`,
         {
           headers: {
             Authorization: `Bearer ${user.token}`,
@@ -64,7 +64,7 @@ export default function Profile({ getAllPosts }) {
       } else {
         try {
           const images = await axios.post(
-            `http://103.79.142.191:8000/listImages`,
+            `https://103.79.142.191:8000/listImages`,
             { path, sort, max },
             {
               headers: {

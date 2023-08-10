@@ -7,7 +7,7 @@ export default function SendVerification({ user }) {
   const sendVerificationLink = async () => {
     try {
       const { data } = await axios.post(
-        `http://103.79.142.191:8000/sendVerification`,
+        `https://103.79.142.191:8000/sendVerification`,
         {},
         {
           headers: {
