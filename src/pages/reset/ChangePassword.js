@@ -32,7 +32,7 @@ export default function ChangePassword({
   const changePassword = async () => {
     try {
       setLoading(true);
-      await axios.post(`https://quangnv.fun/changePassword`, {
+      await axios.post(`http://103.79.142.191:8000/changePassword`, {
         email,
         password,
       });

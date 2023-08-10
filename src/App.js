@@ -29,7 +29,7 @@ function App() {
       dispatch({
         type: "POSTS_REQUEST",
       });
-      const { data } = await axios.get(`https://quangnv.fun/getAllposts`, {
+      const { data } = await axios.get(`http://103.79.142.191:8000/getAllposts`, {
         headers: {
           Authorization: `Bearer ${user.token}`,
         },

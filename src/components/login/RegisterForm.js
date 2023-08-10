@@ -76,7 +76,7 @@ export default function RegisterForm({ setVisible }) {
 
   const registerSubmit = async () => {
     try {
-      const { data } = await axios.post(`https://quangnv.fun/register`, {
+      const { data } = await axios.post(`http://103.79.142.191:8000/register`, {
         first_name,
         last_name,
         email,

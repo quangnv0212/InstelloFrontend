@@ -24,7 +24,7 @@ export default function CodeVerification({
   const verifyCode = async () => {
     try {
       setLoading(true);
-      await axios.post(`https://quangnv.fun/validateResetCode`, {
+      await axios.post(`http://103.79.142.191:8000/validateResetCode`, {
         email,
         code,
       });

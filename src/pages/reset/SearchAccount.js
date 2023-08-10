@@ -23,7 +23,7 @@ export default function SearchAccount({
     try {
       setLoading(true);
 
-      const { data } = await axios.post(`https://quangnv.fun/findUser`, {
+      const { data } = await axios.post(`http://103.79.142.191:8000/findUser`, {
         email,
       });
       setUserInfos(data);
