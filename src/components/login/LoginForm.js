@@ -66,6 +66,7 @@ export default function LoginForm({ setVisible }) {
         <span>
           Chào mừng các bạn đến với dự án cá nhân của mình. Bạn có thể đăng ký
           tài khoản hoặc đăng nhập bằng tài khoản của mình để trải nghiệm Web ạ.
+          Lần đầu load có thể hơi lâu một chút, các bạn có thể refresh lại trang nhé ạ ^^
         </span>
         <hr />
         <button onClick={loginMyAccount} className="blue_btn">
