@@ -9,7 +9,7 @@ export const createPost = async (
 ) => {
   try {
     const { data } = await axios.post(
-      `https://103.79.142.191:8000/createPost`,
+      `http://103.79.142.191:8000/createPost`,
       {
         type,
         background,
@@ -31,7 +31,7 @@ export const createPost = async (
 export const reactPost = async (postId, react, token) => {
   try {
     const { data } = await axios.put(
-      `https://103.79.142.191:8000/reactPost`,
+      `http://103.79.142.191:8000/reactPost`,
       {
         postId,
         react,
@@ -50,7 +50,7 @@ export const reactPost = async (postId, react, token) => {
 export const getReacts = async (postId, token) => {
   try {
     const { data } = await axios.get(
-      `https://103.79.142.191:8000/getReacts/${postId}`,
+      `http://103.79.142.191:8000/getReacts/${postId}`,
 
       {
         headers: {
@@ -66,7 +66,7 @@ export const getReacts = async (postId, token) => {
 export const comment = async (postId, comment, image, token) => {
   try {
     const { data } = await axios.put(
-      `https://103.79.142.191:8000/comment`,
+      `http://103.79.142.191:8000/comment`,
       {
         postId,
         comment,
@@ -87,7 +87,7 @@ export const comment = async (postId, comment, image, token) => {
 export const savePost = async (postId, token) => {
   try {
     const { data } = await axios.put(
-      `https://103.79.142.191:8000/savePost/${postId}`,
+      `http://103.79.142.191:8000/savePost/${postId}`,
       {},
 
       {
@@ -104,7 +104,7 @@ export const savePost = async (postId, token) => {
 export const deletePost = async (postId, token) => {
   try {
     const { data } = await axios.delete(
-      `https://103.79.142.191:8000/deletePost/${postId}`,
+      `http://103.79.142.191:8000/deletePost/${postId}`,
 
       {
         headers: {

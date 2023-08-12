@@ -25,7 +25,7 @@ export default function Activate() {
     try {
       setLoading(true);
       const { data } = await axios.post(
-        `https://103.79.142.191:8000/activate`,
+        `http://103.79.142.191:8000/activate`,
         { token },
         {
           headers: {
