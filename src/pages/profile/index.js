@@ -84,7 +84,7 @@ export default function Profile({ getAllPosts }) {
     } catch (error) {
       dispatch({
         type: "PROFILE_ERROR",
-        payload: error.response.data.message,
+        payload: error?.response?.data.message,
       });
     }
   };

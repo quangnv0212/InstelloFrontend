@@ -44,7 +44,7 @@ export default function Activate() {
         navigate("/");
       }, 3000);
     } catch (error) {
-      setError(error.response.data.message);
+      setError(error?.response?.data.message);
       setTimeout(() => {
         navigate("/");
       }, 3000);

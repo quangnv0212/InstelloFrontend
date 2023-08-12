@@ -46,7 +46,7 @@ export default function Intro({ detailss, visitor, setOthername }) {
       setDetails(data);
       setOthername(data.otherName);
     } catch (error) {
-      console.log(error.response.data.message);
+      console.log(error?.response?.data.message);
     }
   };
   const handleChange = (e) => {

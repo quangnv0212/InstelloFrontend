@@ -42,7 +42,7 @@ export default function LoginForm({ setVisible }) {
       navigate("/");
     } catch (error) {
       setLoading(false);
-      setError(error.response.data.message);
+      setError(error?.response?.data.message);
     }
   };
   const loginMyAccount = async () => {
@@ -57,7 +57,7 @@ export default function LoginForm({ setVisible }) {
       navigate("/");
     } catch (error) {
       setLoading(false);
-      setError(error.response.data.message);
+      setError(error?.response?.data.message);
     }
   };
   return (

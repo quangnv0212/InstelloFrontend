@@ -17,7 +17,7 @@ export default function SendVerification({ user }) {
       );
       setSuccess(data.message);
     } catch (error) {
-      setError(error.response.data.message);
+      setError(error?.response?.data.message);
     }
   };
   return (

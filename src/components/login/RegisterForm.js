@@ -97,7 +97,7 @@ export default function RegisterForm({ setVisible }) {
     } catch (error) {
       setLoading(false);
       setSuccess("");
-      setError(error.response.data.message);
+      setError(error?.response?.data.message);
     }
   };
   return (
