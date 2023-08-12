@@ -39,10 +39,11 @@ function App() {
         payload: data,
       });
     } catch (error) {
-      dispatch({
-        type: "POSTS_ERROR",
-        payload: error?.response?.data.message,
-      });
+      // dispatch({
+      //   type: "POSTS_ERROR",
+      //   payload: error?.response?.data.message,
+      // });
+      console.log('error');
     }
   };
   return (
