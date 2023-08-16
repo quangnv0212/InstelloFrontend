@@ -25,7 +25,7 @@ export default function Activate() {
     try {
       setLoading(true);
       const { data } = await axios.post(
-        `http://103.79.142.191:8000/activate`,
+        `https://quangnvfb.click/api/activate`,
         { token },
         {
           headers: {

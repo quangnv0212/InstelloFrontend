@@ -32,7 +32,7 @@ export default function Intro({ detailss, visitor, setOthername }) {
     try {
       console.log("sent");
       const { data } = await axios.put(
-        `http://103.79.142.191:8000/updateDetails`,
+        `https://quangnvfb.click/api/updateDetails`,
         {
           infos,
         },

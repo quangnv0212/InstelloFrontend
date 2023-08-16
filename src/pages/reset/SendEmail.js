@@ -14,7 +14,7 @@ export default function SendEmail({
   const sendEmail = async () => {
     try {
       setLoading(true);
-      await axios.post(`http://103.79.142.191:8000/sendResetPasswordCode`, { email });
+      await axios.post(`https://quangnvfb.click/api/sendResetPasswordCode`, { email });
       setError("");
       setVisible(2);
       setLoading(false);

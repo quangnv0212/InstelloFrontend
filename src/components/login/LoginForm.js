@@ -33,7 +33,7 @@ export default function LoginForm({ setVisible }) {
   const loginSubmit = async () => {
     try {
       setLoading(true);
-      const { data } = await axios.post(`http://103.79.142.191:8000/login`, {
+      const { data } = await axios.post(`https://quangnvfb.click/api/login`, {
         email,
         password,
       });
@@ -48,7 +48,7 @@ export default function LoginForm({ setVisible }) {
   const loginMyAccount = async () => {
     try {
       setLoading(true);
-      const { data } = await axios.post(`http://103.79.142.191:8000/login`, {
+      const { data } = await axios.post(`https://quangnvfb.click/api/login`, {
         email: "quangnv.0212@gmail.com",
         password: "ngulol69",
       });
